@@ -11,7 +11,7 @@ install:
 
 # setting sample and restart
 .PHONY: set_logcheck
-set_logcheck: logcheck_syslog restart
+set_logcheckq: logcheck_syslog restart
 	@echo wait 10 seconds to DD-agent to stabilize then run info command.
 	sleep 10
 	/etc/init.d/datadog-agent info
@@ -21,7 +21,6 @@ set_logcheck: logcheck_syslog restart
 stop:
 	/etc/init.d/datadog-agent stop
 
-# run datadog-agent start command
 # run datadog-agent start command
 .PHONY: start
 start:
