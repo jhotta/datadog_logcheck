@@ -22,6 +22,7 @@ stop:
 	/etc/init.d/datadog-agent stop
 
 # run datadog-agent start command
+# run datadog-agent start command
 .PHONY: start
 start:
 	/etc/init.d/datadog-agent start
