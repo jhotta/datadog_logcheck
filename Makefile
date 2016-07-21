@@ -45,3 +45,4 @@ logcheck_syslog:
 .PHONY: clean
 clean:
 	rm -f *.pyc
+	rm -f /etc/dd-agent/checks.d/*pyc
